@@ -1,5 +1,4 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { useState, useEffect } from "react";
 import Home from './pages/Home/Home';
 
 

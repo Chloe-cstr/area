@@ -1,0 +1,41 @@
+@use '../../styles/abstracts/var';
+
+.button{
+    display: flex;
+    &__icon{
+        font-size: 12px;
+        transition: transform 0.3s ease;
+    }
+}
+
+.button__full{
+    background-color: var.$color-one;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 24px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    transition: background-color 0.5s;
+}
+
+.button__full:hover{
+    background-color: var.$color-two;
+}
+
+.button__full:hover .button__icon {
+    transform: translateY(-4px); 
+  }
+
+.button__empty{
+    color: var.$color-two;
+    padding: 10px 15px;
+}
+
+.button__empty:hover{
+    background-color: var.$color-one;
+}
+
+.fa-github{
+    margin-right: 7px;
+}

@@ -8,11 +8,9 @@ body {
 }
 
 h1{
-  font-size: var.$size-title;
-  font-family: var.$title-font;
+  font-size: var.$size-subtitle;
+  font-family: var.$logo-font;
   font-weight: normal;
-  line-height: 0.9;
-  font-size: 60px;
 }
 
 h2{
@@ -37,4 +35,5 @@ li {
 a {
   text-decoration: none;
   color: black;
+  font-family: var.$logo-font;
 }
