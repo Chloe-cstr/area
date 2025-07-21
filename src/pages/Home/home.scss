@@ -1,0 +1,9 @@
+.container{
+    padding: 30px 100px;
+    @media (max-width: 1000px){
+        padding: 30px;
+    }
+    &__hero{
+        padding: 50px 0;
+    }
+}
