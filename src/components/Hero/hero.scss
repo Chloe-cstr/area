@@ -1,6 +1,35 @@
 .hero{
     text-align: center;
-    &__image{
+    &__title{
+        @media (max-width: 768px){
+            text-align: center;
+            font-size: 70px;
+        }
+    }
+    &__image--desktop{
         width: 100%;
+        @media (max-width: 1000px){
+            display: none;
+        }
+    }
+    &__image--tablet{
+        display: none;
+        @media (max-width: 1000px){
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px){
+            display: none;
+        }
+    }
+    &__image--mobile{
+        display: none;
+        @media (max-width: 768px){
+            display: block;
+            width: 100%;
+            margin-top: 40px;
+
+        }
     }
 }
