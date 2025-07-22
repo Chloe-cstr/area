@@ -7,7 +7,9 @@ import './home.scss';
 const Home = () =>{
     return(
         <div className="container">
-            <Header />
+            <div className="container__header">
+                <Header />
+            </div>
             <div className="container__hero">
                 <Hero />
             </div>
