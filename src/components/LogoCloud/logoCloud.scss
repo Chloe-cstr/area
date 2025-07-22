@@ -1,0 +1,22 @@
+@use '../../styles/abstracts/var';
+@use '../../styles//abstracts/mixin';
+
+.logoCloud{
+    @include mixin.flex-center;
+    flex-direction: column;
+    gap: 38px;
+    &__text{
+        color: var.$color-five;
+    }
+    &__container{
+        @include mixin.flex-center;
+        flex-wrap: wrap;
+        gap: 52px;
+        &__img{
+            width: 150px;
+            @media (max-width: 769px){
+                width: 100px;
+            }
+        }
+    }
+}
