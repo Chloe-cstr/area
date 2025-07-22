@@ -1,7 +1,11 @@
 import './benefits.scss';
 import Card from '../Card/Card';
 import imageMontagnes from '../../assets/image_montagnes.png';
+import imageUn from '../../assets/image_feuille.png';
+import imageDeux from '../../assets/image_clavier.png';
+import imageTrois from '../../assets/image_bougie.png';
 import Button from '../Button/Button';
+import Slider from '../Slider/Slider';
 
 const Benefits = () =>{
     const cardsData = [
@@ -54,6 +58,12 @@ const Benefits = () =>{
         }
     ]
 
+    const sliderImages = [
+      imageUn,
+      imageDeux,
+      imageTrois
+    ]
+
     return(
         <div className="benefits">
             <div className="benefits__title">
@@ -91,7 +101,7 @@ const Benefits = () =>{
                     />
                 </div>
                 <div className='benefits__container__slider'>
-                    <p>Coucou</p>
+                  <Slider images={sliderImages} />
                 </div>
             </div>
         </div>
