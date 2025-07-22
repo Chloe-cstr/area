@@ -1,9 +1,9 @@
 import './benefits.scss';
 import Card from '../Card/Card';
 import imageMontagnes from '../../assets/image_montagnes.png';
-import imageUn from '../../assets/image_feuille.png';
-import imageDeux from '../../assets/image_clavier.png';
-import imageTrois from '../../assets/image_bougie.png';
+import imageDeux from '../../assets/image_feuille.png';
+import imageTrois from '../../assets/image_clavier.png';
+import imageUn from '../../assets/image_bougie.png';
 import Button from '../Button/Button';
 import Slider from '../Slider/Slider';
 
@@ -78,6 +78,7 @@ const Benefits = () =>{
                         icon={card.icon}
                         title={card.title}
                         text={card.text}
+                        
                     />
                 ))}
             </div>

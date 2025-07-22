@@ -4,7 +4,7 @@ import "./card.scss";
 const Card = ({icon, title, text}) =>{
 
     return(
-        <div className='content-card'>
+        <div className='content-card benefits__cards--width'>
             <i className={`content-card__icon ${icon}`}></i>
             <h4 className='content-card__title'>{title}</h4>
             <p className='content-card__text'>{text}</p>
