@@ -54,7 +54,7 @@ const Header = () => {
 
     return (
         <header className="header">
-            <h1>Area</h1>
+            <h1 className='header__logo'>Area</h1>
             <nav className={`header__nav ${isMenuOpen ? "open" : ""}`}>
                 <ul className="header__nav__list">
                     {navItems.map((item) => (

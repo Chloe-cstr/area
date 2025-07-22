@@ -72,9 +72,9 @@ const Benefits = () =>{
             </div>
             <p className='benefits__text'>Area provides real insights, without the data overload.</p>
             <div className='benefits__cards'>
-                {cardsData.map((card, index) => (
+                {cardsData.map((card) => (
                     <Card
-                        key={index}
+                        key={card.id}
                         icon={card.icon}
                         title={card.title}
                         text={card.text}
@@ -88,12 +88,15 @@ const Benefits = () =>{
                     <h5 className='benefits__container__description__title'>See the Big Picture</h5>
                     <p className='benefits__container__description__text'>Area turns your data into clear, vibrant visuals that show you exactly what's happening in each region.</p>
                     <div className='benefits__container__description__steps'>
-                        {stepsData.map((step) => (
-                            <div className='benefits__container__description__steps__item'>
-                                <span className='benefits__container__description__steps__item--number'>{step.number}</span>
-                                <p className='benefits__container__description__steps__item--text'>{step.text}</p>
-                            </div>
-                        ))}
+                    {stepsData.map((step) => (
+                        <div
+                            key={step.id}
+                            className='benefits__container__description__steps__item'
+                        >
+                            <span className='benefits__container__description__steps__item--number'>{step.number}</span>
+                            <p className='benefits__container__description__steps__item--text'>{step.text}</p>
+                        </div>
+                    ))}
                     </div>
                     <Button
                         text="Discover More"
