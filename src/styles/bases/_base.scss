@@ -22,10 +22,20 @@ h2{
 
 h3{
   font-weight: normal;
+  font-family: var.$subtitle-font;
+  color: var.$color-one;
+  font-size: var.$size-text;
+}
+
+h4{
+  font-family: var.$subtitle-two-font;
+  font-weight: lighter;
+  font-size: 18px;
 }
 
 p{
   font-size: var.$size-text;
+  font-family: var.$text-font;
 }
 
 ul,

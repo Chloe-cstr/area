@@ -1,0 +1,16 @@
+@use '../../styles/abstracts/var';
+@use '../../styles/abstracts/mixin';
+
+.content-card{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-top: 2px solid var.$color-four;
+    padding-top: 24px;
+    &__icon{
+        font-size: 18px;
+    }
+    &__text{
+        color: var.$color-five;
+    }
+}

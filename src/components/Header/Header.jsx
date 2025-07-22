@@ -27,7 +27,7 @@ const Header = () => {
     }, []);
 
     const navItems = [
-        { label: "Benefits", href: "#presentation" },
+        { label: "Benefits", href: "#benefits" },
         { label: "Specifications", href: "#services" },
         { label: "How-to", href: "#competences" },
         { label: "Contact Us", href: "#contact" },

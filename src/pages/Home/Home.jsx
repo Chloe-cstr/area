@@ -1,6 +1,7 @@
 import Header from "../../components/Header/Header";
 import Hero from "../../components/Hero/Hero";
 import LogoCloud from "../../components/LogoCloud/LogoCloud";
+import Benefits from "../../components/Benefits/Benefits";
 import './home.scss';
 
 const Home = () =>{
@@ -12,6 +13,9 @@ const Home = () =>{
             </div>
             <div className="container__logoCloud">
                 <LogoCloud />
+            </div>
+            <div className="container__benefits" id="benefits">
+                <Benefits />
             </div>
         </div>
     )
