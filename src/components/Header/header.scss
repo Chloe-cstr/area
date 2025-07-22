@@ -27,11 +27,13 @@
         left: 0;
         height: 100px;
         @include mixin.flex-center;
-
+        left: 50%;
+        transform: translateX(-50%);
         @media (max-width: 1000px){
             position: fixed;
             top: 30px;
             left: 0;
+            transform: translateX(0);
             right: 0;
             width: 100%; 
             flex-direction: column;
