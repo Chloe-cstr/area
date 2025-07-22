@@ -3,3 +3,10 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin glassmorphism{
+    background: transparent; 
+    border-radius: 50px;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); /* compatibilité Safari */
+}

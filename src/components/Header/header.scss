@@ -5,7 +5,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
     &__nav {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100px;
+        @include mixin.flex-center;
+
         @media (max-width: 1000px){
             display: none;
             position: fixed;
@@ -26,7 +34,10 @@
         &__list {
             display: flex;
             justify-content: center;
-            gap: 10px;            @media (max-width: 1000px){
+            gap: 10px;       
+            @include mixin.glassmorphism;
+            padding: 20px 10px;
+            @media (max-width: 1000px){
                 flex-direction: column;
                 gap: 20px;
                 justify-content: start;
