@@ -23,4 +23,41 @@
         width: 100%;
         margin-top: 80px;
     }
+    &__container{
+        margin-top: 80px;
+        @include mixin.flex-center;
+        gap: 24px;
+        &__description{
+            width: 50%;
+            padding: 42px 0;
+            border-top: 2px solid var.$color-four;
+            display: flex;
+            flex-direction: column;
+            gap: 36px;
+            &__text{
+                color: var.$color-five;
+            }
+            &__steps{
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                font-size: 18px;
+                &__item{
+                    display: flex;
+                    align-items: center;
+                    gap: 36px;
+                    border-top: 2px solid var.$color-four;
+                    padding: 22px 0 12px 0;
+
+                    &--text{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        &__slider{
+            background-color: pink;
+            width: 50%;
+        }
+    }
 }

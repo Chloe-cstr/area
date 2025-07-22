@@ -1,6 +1,7 @@
 import './benefits.scss';
 import Card from '../Card/Card';
-import imageMontagnes from '../../assets/image_montagnes.png'
+import imageMontagnes from '../../assets/image_montagnes.png';
+import Button from '../Button/Button';
 
 const Benefits = () =>{
     const cardsData = [
@@ -30,6 +31,29 @@ const Benefits = () =>{
         }
     ]
 
+    const stepsData = [
+        {
+          "id": 1,
+          "number": "01",
+          "text": "Spot Trends in Seconds: No more digging through numbers."
+        },
+        {
+          "id": 2,
+          "number": "02",
+          "text": "Get Everyone on the Same Page: Share easy-to-understand reports with your team."
+        },
+        {
+          "id": 3,
+          "number": "03",
+          "text": "Make Presentations Pop: Interactive maps and dashboards keep your audience engaged."
+        },
+        {
+          "id": 4,
+          "number": "04",
+          "text": "Your Global Snapshot: Get a quick, clear overview of your entire operation."
+        }
+    ]
+
     return(
         <div className="benefits">
             <div className="benefits__title">
@@ -48,6 +72,28 @@ const Benefits = () =>{
                 ))}
             </div>
             <img src={imageMontagnes} alt="Images de Montagnes" className='benefits__img' />
+            <div className='benefits__container'>
+                <div className='benefits__container__description'>
+                    <h5 className='benefits__container__description__title'>See the Big Picture</h5>
+                    <p className='benefits__container__description__text'>Area turns your data into clear, vibrant visuals that show you exactly what's happening in each region.</p>
+                    <div className='benefits__container__description__steps'>
+                        {stepsData.map((step) => (
+                            <div className='benefits__container__description__steps__item'>
+                                <span className='benefits__container__description__steps__item--number'>{step.number}</span>
+                                <p className='benefits__container__description__steps__item--text'>{step.text}</p>
+                            </div>
+                        ))}
+                    </div>
+                    <Button
+                        text="Discover More"
+                        className="button__empty"
+                        link="https://github.com/Chloe-cstr?tab=repositories"
+                    />
+                </div>
+                <div className='benefits__container__slider'>
+                    <p>Coucou</p>
+                </div>
+            </div>
         </div>
     )
 };
