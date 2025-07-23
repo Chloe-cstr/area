@@ -37,9 +37,8 @@ const HowTo = () =>{
             </div>
             <div className='howto__cards'>
                 {howtoData.map((card) => (
-                    <div className='howto__cards__content'>
+                    <div key={card.id} className='howto__cards__content'>
                         <Card
-                            key={card.id}
                             icon={card.icon}
                             title={card.title}
                             text={card.text}
