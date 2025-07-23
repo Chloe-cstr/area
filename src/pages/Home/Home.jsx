@@ -4,6 +4,7 @@ import LogoCloud from "../../components/LogoCloud/LogoCloud";
 import Benefits from "../../components/Benefits/Benefits";
 import Specs from "../../components/Specs/Specs";
 import HowTo from "../../components/HowTo/HowTo";
+import Contact from "../../components/Contact/Contact";
 import './home.scss';
 
 const Home = () =>{
@@ -26,6 +27,9 @@ const Home = () =>{
             </div>
             <div className="container__howto" id="howto">
                 <HowTo />
+            </div>
+            <div className="container__contact" id="contact">
+                <Contact />
             </div>
         </div>
     )
