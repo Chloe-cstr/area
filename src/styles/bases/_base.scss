@@ -63,3 +63,12 @@ a {
 span{
   color: var.$color-five;
 }
+
+blockquote{
+  font-family: var.$title-font;
+  font-size: var.$size-subtitle;
+  font-style: italic;
+  @media (max-width: 769px){
+    font-size: 28px;
+}
+}

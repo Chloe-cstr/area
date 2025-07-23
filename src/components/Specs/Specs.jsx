@@ -1,6 +1,7 @@
 import './specs.scss';
 import Button from '../Button/Button';
 import Table from '../Table/Table';
+import img from '../../assets/image_boule.png'
 
 const Specs = () =>{
     const specsData = {
@@ -50,6 +51,20 @@ const Specs = () =>{
             </div>
             <div className='specs__table'>
                 <Table data={specsData}/>
+            </div>
+            <div className='specs__feedback'>
+                <div className='specs__feedback__img'>
+                    <img src={img} alt="image de formes" className='specs__feedback__img--width'/>
+                </div>
+                <div className='specs__feedback__text'>
+                    <blockquote className='specs__feedback__text__citation'>
+                        "I was skeptical, but Area has completely transformed the way I manage my business. The data visualizations are so clear and intuitive, and the platform is so easy to use. I can't imagine running my company without it."
+                    </blockquote>
+                    <figcaption className='specs__feedback__text__author'>
+                        <p className='specs__feedback__text__author__name'>John Smith</p>
+                        <p className='specs__feedback__text__author__role'>Head of Data</p>
+                    </figcaption>
+                </div>
             </div>
         </div>
     )
