@@ -1,0 +1,25 @@
+@use '../../styles/abstracts/var';
+@use '../../styles/abstracts/mixin';
+
+.specs{
+    margin-top: 80px;
+    &__title{
+        @include mixin.flex-center;
+        flex-direction: column-reverse;
+        gap: 48px;
+        &--width{
+            font-size: 80px;
+        }
+    }
+    &__presentation{
+        margin-top: 48px;
+        @include mixin.flex-center;
+        flex-direction: column;
+        gap: 48px;
+    }
+    &__table{
+        width: 100%;
+        overflow-x: auto; 
+        -webkit-overflow-scrolling: touch; 
+    }
+}

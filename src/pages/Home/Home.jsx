@@ -2,6 +2,7 @@ import Header from "../../components/Header/Header";
 import Hero from "../../components/Hero/Hero";
 import LogoCloud from "../../components/LogoCloud/LogoCloud";
 import Benefits from "../../components/Benefits/Benefits";
+import Specs from "../../components/Specs/Specs";
 import './home.scss';
 
 const Home = () =>{
@@ -18,6 +19,9 @@ const Home = () =>{
             </div>
             <div className="container__benefits" id="benefits">
                 <Benefits />
+            </div>
+            <div className="container__specs" id="specs">
+                <Specs />
             </div>
         </div>
     )

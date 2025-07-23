@@ -1,0 +1,46 @@
+@use '../../styles/abstracts/var';
+@use '../../styles/abstracts/mixin';
+
+.table{
+    width: 100%;
+    margin-top: 80px;
+    border-collapse: collapse;
+    @media (max-width: 769px){
+        min-width: 700px;
+    }
+    &__title{
+        &__row{
+            &__item{
+                font-family: var.$subtitle-font;
+                font-size: var.$size-subtitle;
+                font-weight: normal;
+                padding-bottom: 24px;
+                border-bottom: 1px solid var.$color-five;
+                @media (max-width: 769px){
+                    font-size: 18px;
+                    padding-bottom: 18px;
+                }
+            }
+        }
+    }
+    &__body{
+        &__row{
+            &__item{
+                border: 1px solid var.$color-four;
+                padding: 20px 30px;
+                font-family: var.$subtitle-font;
+                color: var.$color-five;
+                @media (max-width: 769px){
+                    font-size: 12px;
+                    padding-right: 0;
+                }
+                &__icon{
+                    margin-right: 12px;
+                    @media (max-width: 769px){
+                        margin-right: 7px;
+                    }
+                }
+            }
+        }
+    }
+}
