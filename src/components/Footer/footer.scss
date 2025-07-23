@@ -1,0 +1,8 @@
+@use '../../styles/abstracts/var';
+@use '../../styles/abstracts/mixin';
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    color: var.$color-five;
+}

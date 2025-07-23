@@ -5,6 +5,7 @@ import Benefits from "../../components/Benefits/Benefits";
 import Specs from "../../components/Specs/Specs";
 import HowTo from "../../components/HowTo/HowTo";
 import Contact from "../../components/Contact/Contact";
+import Footer from "../../components/Footer/Footer";
 import './home.scss';
 
 const Home = () =>{
@@ -31,6 +32,7 @@ const Home = () =>{
             <div className="container__contact" id="contact">
                 <Contact />
             </div>
+            <Footer />
         </div>
     )
 }
