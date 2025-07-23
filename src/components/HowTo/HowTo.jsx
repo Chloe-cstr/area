@@ -1,4 +1,4 @@
-import './howto.scss';
+import './howTo.scss';
 import Button from '../Button/Button';
 import Card from '../Card/Card';
 import image from '../../assets/image_paysage.png'
