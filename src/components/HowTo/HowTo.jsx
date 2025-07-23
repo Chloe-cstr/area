@@ -1,6 +1,7 @@
 import './howto.scss';
 import Button from '../Button/Button';
 import Card from '../Card/Card';
+import image from '../../assets/image_paysage.png'
 
 const HowTo = () =>{
     const howtoData = [
@@ -47,6 +48,7 @@ const HowTo = () =>{
                     </div>
                 ))}
             </div>
+            <img src={image} alt="image d'un paysage" className='howto__image' />
         </div>
     )
 };

@@ -34,6 +34,7 @@
         align-items: stretch;
         overflow-x: auto; 
         -webkit-overflow-scrolling: touch; 
+        margin-bottom: 80px;
         @media (max-width: 1000px){
             gap: 32px;
         }
@@ -43,5 +44,12 @@
                 width: 100%;  
             }
         }
+    }
+    &__image{
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+        height: 600px;
+        border-radius: 50px;
     }
 }
